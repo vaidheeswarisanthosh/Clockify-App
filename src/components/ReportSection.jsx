@@ -11,7 +11,7 @@ const ReportSection = () => {
       
       {/* Report Chart */}
       {entries.length > 0 ? (
-        <ReportChart entries={entries}  />
+        <ReportChart entries={entries}/>
       ) : (
         <p className='text-gray-600' >No entries available. Start tracking time to generate reports.</p>
       )}

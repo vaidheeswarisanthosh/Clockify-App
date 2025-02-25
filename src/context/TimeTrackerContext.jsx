@@ -2,14 +2,13 @@ import { createContext, useContext, useState, useEffect } from 'react';
 
 const TimeTrackerContext = createContext();
 
-export function TimeTrackerProvider({ children }) {
+export function TimeTrackerProvider({ children }) {  //children prop represents all the components wrapped inside TimeTrackerProvider
   const [mode, setMode] = useState('timer'); // 'timer' or 'manual'
   const [isRunning, setIsRunning] = useState(false);
   const [time, setTime] = useState(0);
   const [entries, setEntries] = useState([]);
   const [taskDescription, setTaskDescription] = useState('');
 
-  // Timer mode - updates time when running
   useEffect(() => {
     let interval;
     if (isRunning) {

@@ -10,9 +10,12 @@ const ReportChart = ({ entries }) => {
     return acc;
   }, {});
 
+  //Preparing Data for the chart
+
   const labels = Object.keys(projectData);
   const dataValues = Object.values(projectData);
 
+  //chart data configration
   const data = {
     labels,
     datasets: [
@@ -26,6 +29,7 @@ const ReportChart = ({ entries }) => {
     ],
   };
 
+//chart options Configuration
   const options = {
     responsive: true,
     plugins: {
@@ -47,6 +51,7 @@ const ReportChart = ({ entries }) => {
     },
   };
 
+  //Rendering the bar chart
   return <Bar data={data} options={options} />;
 };
 
