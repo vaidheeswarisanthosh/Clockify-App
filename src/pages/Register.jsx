@@ -13,7 +13,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5001/api/auth/register", user);
+      await axios.post("https://clockify-app.onrender.com/api/auth/register", user);
       alert("Registration successful! Please login.");
       navigate("/login");
     } catch (error) {

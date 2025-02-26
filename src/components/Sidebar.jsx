@@ -7,7 +7,7 @@ function Sidebar() {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    const token = localStorage.getItem("authToken"); // Retrieve JWT Token
+    const token = localStorage.getItem("authToken"); 
 
     if (!token) {
       console.error("No token found in localStorage");
@@ -17,7 +17,7 @@ function Sidebar() {
     try {
      
       await axios.post(
-        "http://localhost:5001/api/auth/logout",
+        "https://clockify-app.onrender.com/api/auth/logout",
         {}, 
         {
           headers: {
