@@ -17,7 +17,10 @@ app.use(cors(
   }
 ));
 app.use(express.json());
-
+// Test Route
+app.get('/', (req, res) => {
+  res.send('API is working!');
+});
 // MongoDB Connection
 mongoose
   .connect(process.env.MONGODB_URI)
