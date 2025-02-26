@@ -6,8 +6,8 @@ import Timer from "./Timer";
 
 function TimeTracker() {
     return (
-      <div className="time-tracker-section">
-        <h1>Clockify</h1>
+      <div className="time-tracker-section mt-20">
+        {/* <h1>Clockify</h1> */}
          <TaskInput/>
         <Timer/>
         <ManualEntry/>

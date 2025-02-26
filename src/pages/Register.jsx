@@ -53,7 +53,7 @@ const Register = () => {
             className="w-full p-2 border rounded mb-2"
             required
           />
-          <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded">Register</button>
+          <button type="submit" className="w-full bg-green-400 text-gray-950 p-2 rounded">Register</button>
         </form>
         <p className="text-center mt-2 text-sm">
           Already have an account? <a href="/login" className="text-blue-500">Login</a>

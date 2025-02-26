@@ -46,7 +46,7 @@ const Login = () => {
             className="w-full p-2 border rounded mb-2"
             required
           />
-          <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+          <button type="submit" className="w-full bg-green-400 text-gray-950 p-2 rounded">Login</button>
         </form>
         <p className="text-center mt-2 text-sm">
           Don't have an account? <a href="/" className="text-blue-500">Register</a>

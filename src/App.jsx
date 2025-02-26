@@ -8,6 +8,7 @@ import { TimeTrackerProvider } from './context/TimeTrackerContext';
 import './App.css';
 import TimeTracker from './components/TimeTracker';
 import ReportSection from './components/ReportSection';
+import Navbar from './components/Navbar';
 
 
 
@@ -37,9 +38,10 @@ function App() {
     //     </div>
     //   </Router>
     // </TimeTrackerProvider>
-
+   
 
     <Router>
+       <Navbar/>
     <Routes>
       <Route path="/" element={<Register />} />
        <Route path="/login" element={<Login />} />

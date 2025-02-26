@@ -48,7 +48,7 @@ function Sidebar() {
 
     <div className='sidebar'>
     <div>
-      <h2 className="text-2xl font-bold mb-6">Clockify</h2>
+      {/* <h2 className="text-2xl font-bold mb-6">Clockify</h2> */}
       <nav>
         <ul className="space-y-4">
           <li>
