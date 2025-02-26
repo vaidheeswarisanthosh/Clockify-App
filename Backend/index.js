@@ -10,7 +10,7 @@ const app = express();
 // Middleware
 app.use(cors(
   {
-    origin: "https://clockify-app.netlify.app", // Allow requests from frontend
+    origin: "http://localhost:5173", // Allow requests from frontend
     credentials: true, // Allow cookies & authorization headers
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allow JWT tokens
